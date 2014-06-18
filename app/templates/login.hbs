@@ -1,0 +1,10 @@
+Login!
+
+<form>
+{{ input type="text" value=email }}
+{{ input type="password" value=password }}
+<label>Remember Me?</label>
+{{ input type="checkbox" checked=rememberMe }}
+
+<button {{ action 'logMeIn' this }}>Login</button>
+</form>

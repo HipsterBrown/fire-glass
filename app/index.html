@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FireGlass</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/fire-glass.css">
+  </head>
+  <body>
+    <script>
+      window.FireGlassENV = {{ENV}};
+      window.EmberENV = window.FireGlassENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/fire-glass.js"></script>
+    <script>
+      window.FireGlass = require('fire-glass/app')['default'].create(FireGlassENV.APP);
+    </script>
+  </body>
+</html>
