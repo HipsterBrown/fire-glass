@@ -1,4 +1,4 @@
-Login!
+<h1>Login!</h1>
 
 <form>
 {{ input type="text" value=email }}
@@ -8,3 +8,5 @@ Login!
 
 <button {{ action 'logMeIn' this }}>Login</button>
 </form>
+<h2>Or just log in with Twitter</h2>
+<button {{action 'loginTwitter'}}>Twitter Login</button>

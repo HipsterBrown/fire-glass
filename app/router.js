@@ -9,6 +9,7 @@ Router.map(function() {
   this.resource('auth', {path:'auth'}, function(){
     
   });
+  this.route('signup');
 });
 
 export default Router;

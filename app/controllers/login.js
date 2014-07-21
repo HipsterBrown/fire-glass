@@ -10,6 +10,16 @@ export default Ember.ObjectController.extend({
         password: model.get('password'),
         rememberMe: model.get('rememberMe')
       });
-    }
+	  model.setProperties({
+		  'email': '',
+		  'password': '',
+		  'rememberMe': false
+	  });
+    },
+	loginTwitter: function() {
+		var auth = this.get('auth');
+
+		auth.login('twitter');
+	}
   }
 });

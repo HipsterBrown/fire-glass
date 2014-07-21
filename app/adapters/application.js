@@ -1,3 +1,3 @@
 export default DS.FirebaseAdapter.extend({
-  firebase: new Firebase('https://----------.firebaseio.com')
+  firebase: new Firebase('https://wtfront-end-dev.firebaseio.com')
 });
